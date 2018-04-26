@@ -13,6 +13,8 @@
 		890E74882091AA2C00661900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 890E74872091AA2C00661900 /* Assets.xcassets */; };
 		890E748B2091AA2C00661900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890E74892091AA2C00661900 /* LaunchScreen.storyboard */; };
 		890E748E2091AA2C00661900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 890E748D2091AA2C00661900 /* main.m */; };
+		890E74952091AB5900661900 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 890E74942091AB5900661900 /* address.plist */; };
+		890E74982091AB7400661900 /* ZJJCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 890E74962091AB7300661900 /* ZJJCustomPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		890E748A2091AA2C00661900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		890E748C2091AA2C00661900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		890E748D2091AA2C00661900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		890E74942091AB5900661900 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		890E74962091AB7300661900 /* ZJJCustomPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJCustomPickerView.m; sourceTree = "<group>"; };
+		890E74972091AB7300661900 /* ZJJCustomPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJCustomPickerView.h; sourceTree = "<group>"; };
+		890E74992091AC1800661900 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 		890E747D2091AA2C00661900 /* ZJJGetAllProvinceInfoPlist */ = {
 			isa = PBXGroup;
 			children = (
+				890E74942091AB5900661900 /* address.plist */,
+				890E74972091AB7300661900 /* ZJJCustomPickerView.h */,
+				890E74962091AB7300661900 /* ZJJCustomPickerView.m */,
 				890E747E2091AA2C00661900 /* AppDelegate.h */,
 				890E747F2091AA2C00661900 /* AppDelegate.m */,
 				890E74812091AA2C00661900 /* ViewController.h */,
@@ -67,6 +76,7 @@
 				890E74892091AA2C00661900 /* LaunchScreen.storyboard */,
 				890E748C2091AA2C00661900 /* Info.plist */,
 				890E748D2091AA2C00661900 /* main.m */,
+				890E74992091AC1800661900 /* Header.h */,
 			);
 			path = ZJJGetAllProvinceInfoPlist;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				890E748B2091AA2C00661900 /* LaunchScreen.storyboard in Resources */,
+				890E74952091AB5900661900 /* address.plist in Resources */,
 				890E74882091AA2C00661900 /* Assets.xcassets in Resources */,
 				890E74862091AA2C00661900 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +155,7 @@
 			files = (
 				890E74832091AA2C00661900 /* ViewController.m in Sources */,
 				890E748E2091AA2C00661900 /* main.m in Sources */,
+				890E74982091AB7400661900 /* ZJJCustomPickerView.m in Sources */,
 				890E74802091AA2C00661900 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

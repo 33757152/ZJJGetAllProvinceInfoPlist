@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ZJJCustomPickerView.h"
+#import "Header.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    UILabel *_label;
+}
 
 @end
 
@@ -17,7 +21,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = CGRectMake(0, 100, SCREEN_WIDTH, 40);
+    label.backgroundColor = [UIColor yellowColor];
+    label.text = @"";
+    label.textColor = [UIColor redColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    _label = label;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 200, 100, 50);
+    button.backgroundColor = [UIColor yellowColor];
+    [button setTitle:@"出现" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(comeOut) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
+
+- (void)comeOut {
+    
+    ZJJCustomPickerView *picker = [[ZJJCustomPickerView alloc] init];
+    picker.passString = ^(NSString *string) {
+        _label.text = string;
+    };
+    [self.view addSubview:picker];
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {
